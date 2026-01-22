@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Simple and responsive Todo App built with HTML, CSS (BEM) and JavaScript. Features task adding, deleting and status management.">
+    <meta name="author" content="Maksym Shchebetiuk">
+
+    <title>Todo App | JS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/845/845646.png">
+</head>
+<body>
+    <div class="todo">
+        <div class="todo__title">Todo App</div>
+
+        <div class="todo__form">
+            <input 
+                type="text"
+                class="todo__input"
+                placeholder="Enter task..."
+            />
+
+            <button class="todo__button">Add</button>
+        </div>
+
+        <ul class="todo__list"></ul>
+
+        <p class="todo__counter">
+            Tasks: <span class="todo__count">0</span>
+        </p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
