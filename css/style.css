@@ -3,38 +3,69 @@
     font-family: Arial, sans-serif;
 }
 
+:root { 
+    --bg: #f4f6fb;
+    --card: #ffffff;
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+}
+
 body {
-    background: #EFF2C0;
+    background: var(--bg);
     display: flex;
     justify-content: center;
-    padding-top: 60px;
+    padding-top: 80px;
+    color: var(--text)
 }
 
 .todo {
-    background: #fff;
-    padding: 20px;
-    width: 380px;
-    border-radius: 8px;
+    background: var(--card);
+    padding: 24px;
+    width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 .todo__title {
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .todo__form {
     display: flex;
-    gap: 8px;
+    gap: 10px;
 }
 
 .todo__input {
     flex: 1;
-    padding: 8px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    font-size: 14px;
+}
+
+.todo__input:focus {
+    outline: none;
+    border-color: var(--primary);
 }
 
 .todo__button {
-    padding: 8px 12px;
+    padding: 10px 16px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
+    font-weight: 500;
+}
+
+.todo__button:hover {
+    background: var(--primary-hover);
 }
 
 .todo__list {
@@ -45,30 +76,44 @@ body {
 
 .todo__item {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin-bottom: 8px;
     padding: 12px;
-    transition: transform 0.3s;
+    border-radius: 8px; 
+    border: 1px solid var(--border);
+    margin-bottom: 8px;
+    transition: background 0.2s, transform 0.2s;
 }
 
 .todo__item:hover {
-    background: #f3f3f3;
-    transform: translateY(-5px)
+    background: #f9fafb;
+    transform: translateY(-2px)
+}
+
+.todo__item span {
+    cursor: pointer;
 }
 
 .todo__item--done span {
     text-decoration: line-through;
-    color: gray;
+    color: var(--muted);
 }
 
 .todo__delete {
     cursor: pointer;
-    color: red;
+    font-size: 14px;
+    color: #ef4444;
     border: none;
     background: none;
 }
 
+.todo__delete:hover {
+    color: #b91c1c;
+}
+
 .todo__counter {
     text-align: center;
-    margin-top: 12px;
+    margin-top: 16px;
+    color: var(--muted);
+    font-size: 14px;
 }

@@ -47,6 +47,10 @@ function render() {
     list.textContent = '';
     count.textContent = todos.length;
 
+    if (todos.length === 0) {
+        list.innerHTML = `<li class='todo-empty'>No tasks yet...</li>`;
+    }
+
     todos.forEach(todo => {
         const li = document.createElement('li');
         li.className = 'todo__item';
@@ -57,7 +61,7 @@ function render() {
         span.addEventListener('click', () => toggleTodo(todo.id));
 
         const btn = document.createElement('button');
-        btn.textContent = '[X]';
+        btn.textContent = '[Delete]';
         btn.className = 'todo__delete';
         btn.addEventListener('click', () => deleteTodo(todo.id));
 
