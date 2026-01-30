@@ -24,12 +24,12 @@ The application works correctly on:
 - Mobile
 
 ## 📸 Preview
-Live demo: https://elegant-pavlova-1487bb.netlify.app/
+Live demo: [LINK](https://todo-list-app-pi-two.vercel.app/)
 
-<img width="1678" height="939" alt="image" src="https://github.com/user-attachments/assets/e61f3144-5d6d-48fd-bff4-67a15d884ae3" />
-
+<img width="1196" height="603" alt="image" src="https://github.com/user-attachments/assets/695734d9-59a1-4319-af1b-f1c321c3d8ae" />
 
 ## 🔧 Getting Started
 1. Clone the repository
 ```bash
 git clone https://github.com/mshchebetiuk/todo-list-app.git
+
