@@ -24,7 +24,7 @@ The application works correctly on:
 - Mobile
 
 ## 📸 Preview
-Live demo: [LINK](https://todo-list-app-pi-two.vercel.app/)
+Live demo: [LINK](https://todo-list-app-mshchebetiuk.netlify.app/)
 
 <img width="1196" height="603" alt="image" src="https://github.com/user-attachments/assets/695734d9-59a1-4319-af1b-f1c321c3d8ae" />
 
@@ -32,4 +32,5 @@ Live demo: [LINK](https://todo-list-app-pi-two.vercel.app/)
 1. Clone the repository
 ```bash
 git clone https://github.com/mshchebetiuk/todo-list-app.git
+
 
